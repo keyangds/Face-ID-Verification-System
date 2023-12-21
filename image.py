@@ -18,15 +18,15 @@ siamese_batch = 1
 learning_rate = 0.001
 max_epoch = 30
 
-img_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/olivettie_dataset/olivetti_faces.npy')
-unique_img_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/olivettie_dataset/olivetti_faces_target.npy')
+img_array = np.load('../olivettie_dataset/olivetti_faces.npy')
+unique_img_array = np.load('../olivettie_dataset/olivetti_faces_target.npy')
 
 ## pairs for siamese network here are 500 different pair of pictures (500, 2, 64, 64)
-pairs_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/olivetti_pairs.npy')
-pairs_label_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/olivetti_pairs_label.npy')
+pairs_array = np.load('../olivetti_pairs.npy')
+pairs_label_array = np.load('../olivetti_pairs_label.npy')
 
-new_img_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/new_data.npy')
-new_unique_img_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/new_data_label.npy')
+new_img_array = np.load('../new_data.npy')
+new_unique_img_array = np.load('../new_data_label.npy')
 
 imgA_array = []
 imgB_array = []
@@ -44,11 +44,11 @@ for i in range(len(pairs_array)):
 # exit()
 
 # 2000 pairs (2000, 2, 64, 64)
-test_pairs_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/test_pairs.npy')
-test_pairs_label_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/test_pairs_labels.npy')
+test_pairs_array = np.load('../test_pairs.npy')
+test_pairs_label_array = np.load('../test_pairs_labels.npy')
 
-or_test_pairs_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/test_pairs.npy')
-or_test_pairs_label_array = np.load('/Users/xuankeyang/Desktop/SPRING 2023/CSCI5561/Project/test_pairs_labels.npy')
+or_test_pairs_array = np.load('../test_pairs.npy')
+or_test_pairs_label_array = np.load('../test_pairs_labels.npy')
 
 # plt.imshow(or_test_pairs_array[i][0])
 # plt.show()
